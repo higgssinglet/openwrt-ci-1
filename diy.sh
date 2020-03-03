@@ -1,13 +1,11 @@
 #!/bin/bash
 cd /home/runner/openwrt
 
-echo 'Update luci-app-passwall & openwrt-chinadns-ng & v2ray'
+echo 'Update luci-app-passwall & openwrt-chinadns-ng'
 rm -rf /home/runner/openwrt/package/lienol/luci-app-passwall/
 rm -rf /home/runner/openwrt/package/ctcgfw/openwrt-chinadns-ng/
-rm -rf /home/runner/openwrt/package/lean/v2ray/
 cp -R /home/runner/openwrt-package/lienol/luci-app-passwall/ /home/runner/openwrt/package/lienol/
 cp -R /home/runner/openwrt-package/package/chinadns-ng/ /home/runner/openwrt/package/lienol/
-cp -R /home/runner/openwrt-package/package/v2ray/ /home/runner/openwrt/package/lean/
 
 echo 'Update luci-theme-argon'
 rm -rf /home/runner/openwrt/package/lean/luci-theme-argon/
