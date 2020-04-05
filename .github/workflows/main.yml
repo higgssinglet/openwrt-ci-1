@@ -46,7 +46,7 @@ jobs:
       run: |
         cd /home/runner
         git clone -b dev https://github.com/project-openwrt/openwrt.git
-        git clone https://github.com/jerrykuku/luci-theme-argon.git
+        git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
         sudo chown -R runner:runner openwrt luci-theme-argon
         cd /home/runner/openwrt
         ./scripts/feeds update -a
